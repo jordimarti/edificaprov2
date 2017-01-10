@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @subcourse.course_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @subcourse.name %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @subcourse.duration %>
+</p>
+
+<p>
+  <strong>Videos duration:</strong>
+  <%= @subcourse.videos_duration %>
+</p>
+
+<p>
+  <strong>Library image:</strong>
+  <%= @subcourse.library_image %>
+</p>
+
+<p>
+  <strong>Intro video hd:</strong>
+  <%= @subcourse.intro_video_hd %>
+</p>
+
+<p>
+  <strong>Intro video sd:</strong>
+  <%= @subcourse.intro_video_sd %>
+</p>
+
+<p>
+  <strong>Intro video image:</strong>
+  <%= @subcourse.intro_video_image %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @subcourse.locale %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @subcourse.region %>
+</p>
+
+<p>
+  <strong>Visible:</strong>
+  <%= @subcourse.visible %>
+</p>
+
+<%= link_to 'Edit', edit_subcourse_path(@subcourse) %> |
+<%= link_to 'Back', subcourses_path %>

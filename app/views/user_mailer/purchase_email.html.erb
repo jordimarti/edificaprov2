@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body id="billingEmail" style="width: 100% !important; -webkit-text-size-adjust: none; margin: 0; padding: 0;">
+    <center>
+      <table id="backgroundTable" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100% !important; height: 100% !important; color: #4c4c4c; font-size: 15px; line-height: 150%; background: #ffffff; margin: 0; padding: 0; border: 0;">
+        <tr style="vertical-align: top; padding: 0;">
+          <td align="center" valign="top" style="vertical-align: top; padding: 0;">
+            <table id="templateContainer" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 600px; color: #4c4c4c; font-size: 15px; line-height: 150%; background: #ffffff; margin: 40px 0; padding: 0; border: 0;">
+              <tr style="vertical-align: top; padding: 0;">
+                <td class="templateContainerPadding" align="center" valign="top" style="vertical-align: top; padding: 0 40px;">
+                  <table id="templateContent" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; background: #ffffff; margin: 0; padding: 0; border: 0;">
+                    <tr style="vertical-align: top; padding: 0;">
+                      <td style="vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
+                        <h1 id="logo" style="color: #6E5BAA; display: block; font-family: hybrea, proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 32px; font-weight: 200; text-align: left; margin: 0 0 40px;" align="left"><img src="https://s3-eu-west-1.amazonaws.com/edificapro/logo_edificapro_mail.png" alt="EdificaPRO" width="150" height="38" style="outline: none; text-decoration: none; border: 0;" /></h1>
+
+                        <p style="margin: 20px 0;">
+  <%= t('.hello') %> <%= @user_details.first_name %>, <br><br>
+  <%= t('.thanks_for_buying') %> <strong>"<%= @course_details.name %>"</strong> <%= t('.thanks_for_buying2') %>.
+</p>
+
+<table class="hr" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; border-top-color: #ebeaef; border-top-style: solid; background: #ffffff; margin: 0; padding: 0; border-width: 2px 0 0;"><tr style="vertical-align: top; padding: 0;"><td style="vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">&nbsp;</td></tr></table>
+
+<table id="billing-info" class="address" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; background: #ffffff; margin: 0; padding: 0; border: 0;">
+  <tr style="vertical-align: top; padding: 0;">
+    <td style="vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
+      <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.account') %>:</h4>
+      <p style="margin: 0 0 20px;"><a href="mailto:<%= @user_details.email %>" style="color: #6e5da8;font-weight: normal;text-decoration: none;"><%= @user_details.email %></a></p>
+
+      <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.charged_to') %>:</h4>
+      <p style="margin: 0 0 20px;">
+        <%= @user_details.name %><br />
+      </p>
+
+      <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.course_name') %>:</h4>
+      <p style="margin: 0 0 20px;"><%= @course_details.name %></p>
+
+      <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.bill_number') %>:</h4>
+      <p style="margin: 0 0 20px;">EP-<%= @purchase_details.bill_number %></p>
+
+      <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.date') %>:</h4>
+      <p style="margin: 0 0 20px;"><%= l Date.today, format: :default %></p><br>
+    </td>
+  </tr>
+</table>
+
+
+<table class="line-items" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; background: #ffffff; margin: 0; padding: 0; border: 0;">
+  <tr style="vertical-align: top; padding: 0;">
+    <td class="label" style="vertical-align: top; text-align: left; border-bottom-width: 1px; border-bottom-color: #ebeaef; border-bottom-style: solid; padding: 1em 0;" align="left" valign="top">
+      <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.concept') %></h4>
+    </td>
+    <td class="value" style="vertical-align: top; text-align: right; border-bottom-width: 1px; border-bottom-color: #ebeaef; border-bottom-style: solid; width: 133px; padding: 1em 0;" align="right" valign="top">
+      <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.amount') %></h4>
+    </td>
+  </tr>
+  <% 
+    price_no_vat = (@purchase_details.price/100)/1.21
+    vat = price_no_vat * 0.21
+    final_price = @purchase_details.price/100
+  %>
+  <tr style="vertical-align: top; padding: 0;">
+    <td class="label" style="vertical-align: top; text-align: left; border-bottom-width: 1px; border-bottom-color: #ebeaef; border-bottom-style: solid; padding: 1em 0;" align="left" valign="top">
+      <strong><%= t('.price_no_vat') %></strong>
+    </td>
+    <td class="value" style="vertical-align: top; text-align: right; border-bottom-width: 1px; border-bottom-color: #ebeaef; border-bottom-style: solid; width: 133px; padding: 1em 0;" align="right" valign="top">
+      € <%= number_with_precision(price_no_vat, precision: 2) %>
+    </td>
+  </tr>
+  <tr style="vertical-align: top; padding: 0;">
+    <td class="label" style="vertical-align: top; text-align: left; border-bottom-width: 1px; border-bottom-color: #ebeaef; border-bottom-style: solid; padding: 1em 0;" align="left" valign="top">
+      <strong><%= t('.vat') %></strong>
+    </td>
+    <td class="value" style="vertical-align: top; text-align: right; border-bottom-width: 1px; border-bottom-color: #ebeaef; border-bottom-style: solid; width: 133px; padding: 1em 0;" align="right" valign="top">
+      € <%= number_with_precision(vat, precision: 2) %>
+    </td>
+  </tr>
+  
+</table>
+<table id="totals" class="line-items" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; border-top-color: #ebeaef; border-top-style: solid; background: #ffffff; margin: 0; padding: 0; border-width: 1px 0 0;">
+  
+  <tr id="total" style="vertical-align: top; padding: 0;">
+    <td class="label" style="vertical-align: top; text-align: right; border-bottom-width: 1px; border-bottom-color: #ebeaef; padding: 1em 0; border: none;" align="right" valign="top">
+      <h3 style="display: block; font-size: 16px; font-weight: 500; margin: 0 0 10px;"><%= t('.total') %>:</h3>
+    </td>
+    <td class="value" style="vertical-align: top; text-align: right; border-bottom-width: 1px; border-bottom-color: #ebeaef; width: 133px; padding: 1em 0; border: none;" align="right" valign="top">
+      <h3 style="display: block; font-size: 16px; font-weight: 500; margin: 0 0 10px;">€ <%= number_with_precision(final_price, precision: 2) %></h3>
+    </td>
+  </tr>
+</table>
+
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr style="vertical-align: top; padding: 0;">
+                <td class="templateContainerPadding" align="center" valign="top" style="vertical-align: top; padding: 0 40px;">
+                  <table id="footerContent" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; border-top-style: solid; border-top-color: #ebeaef; color: #999999; font-size: 12px; background: #ffffff; margin: 0; padding: 0; border-width: 1px 0 0;">
+                    <tr style="vertical-align: top; padding: 0;">
+                      <td valign="top" style="vertical-align: top; text-align: center; padding: 0;" align="center">
+                        <p style="margin: 20px 0;">
+                          <%= t('.charge_name') %>.
+                        </p>
+                        <p style="margin: 20px 0;">
+                          <%= t('.doubts') %> <a href="mailto:support@edificapro.com">support@edificapro.com</a>.
+                        </p>
+                        <p style="margin: 20px 0;">
+                          Jordi Martí Muñoz, NIF: 36531630V, Rogent 118 Prl 2a 08026 Barcelona
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+
+<style type="text/css">
+body {
+width: 100% !important;
+}
+.ReadMsgBody {
+width: 100%;
+}
+.ExternalClass {
+width: 100%;
+}
+body {
+-webkit-text-size-adjust: none;
+}
+body {
+margin: 0; padding: 0;
+}
+img {
+border: 0; outline: none; text-decoration: none;
+}
+#backgroundTable {
+height: 100% !important; margin: 0; padding: 0; width: 100% !important;
+}
+#backgroundTable {
+color: #4c4c4c; background-color: #ffffff; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; line-height: 150%;
+}
+@media (max-width: 540px) {
+  #templateContainer {
+    width: 100% !important;
+  }
+  #templateContainer .templateContainerPadding {
+    padding: 0 5% !important;
+  }
+}
+</style>
+</body>
+</html>

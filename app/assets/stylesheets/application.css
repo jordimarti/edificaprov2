@@ -16,71 +16,343 @@
 
  */
 
-/***** HEADER ******/
-
-.top-bar {
-	background-color: #000000;
-	padding: 0.2rem;
+body {
+	background-color: #585857;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
 }
 
-.top-bar ul {
-	background-color: #000000;
-	margin-top: 2px;
+main {
+	padding: 0px;
+	margin-bottom: 60px;
 }
 
-.top-bar li:hover {
-	background-color: #333333;
+.top-header {
+	background-color: white;
+	padding: 20px;
+	min-height: 70px;
 }
 
-.top-bar-title-container {
-	color: #ffffff;
-	padding-left: 12px;
+.logo-container {
+	float: left;
 }
 
-.top-bar-title {
-	color: #ffffff;
+.course-top-header-container {
+	padding: 0px 10px 0px 10px;
 }
 
-.top-bar-title:hover {
-	color: #ffffff;
+.top-menu {
+	margin-top: 8px;
 }
 
-.sessionbar-link {
-	color: #ffffff;
-	font-size: 0.9em;
+.logo-edificapro {
+	width: 174px;
+	height: 44px;
+	margin: -5px 0px 0px 0px;
 }
 
-.sessionbar-link:hover {
-	color: #ffffff;
+a.sessionbar-link {
+	color: #666;
+	font-weight: bold;
+	font-size: 13px;
 }
 
-.is-submenu-item {
-	background-color: #666666;
+a.sessionbar-link:hover {
+	color: #DE5235;
 }
 
-.sub-top-bar {
-	background-color: #7C477E;
-	height: 40px;
+.mobile-menu {
+	margin-top: 30px;
+	text-align: right;
 }
 
+.hamburguer {
+	width: 20px;
+	height: 20px;
+	margin-top: 6px;
+}
 
-/***** FOOTER ******/
+.mobile-menu > ul {
+	list-style-type: none;
+}
+
+.mobile-menu > ul > li {
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.page-title {
+	font-weight: 300;
+}
 
 .footer-container {
-	padding: 30px;
-	border-top: 1px solid #ccc;
+
 }
 
-.footer-text-container {
+.footer-title {
+	color: white;
+	font-size: 13px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #999;
+}
+
+.footer-list-container {
+	padding: 20px 0px 60px 0px;
+}
+
+ul.footer-list {
+	list-style-type: none;
+	padding: 0px;
+  margin: 0px;
+}
+
+.footer-item {
+	font-size: 13px;
+	color: #CCC;
+	margin-bottom: 10px;
+}
+
+.footer-link {
+	color: white;
+	font-size: 13px;
+}
+
+.footer-link:hover {
+	color: white;
+}
+
+.social-button-container {
+	float: left;
+	margin-right: 20px;
+}
+
+.social-button {
+	width: 42px;
+	height: 42px;
+}
+
+.copyright-container {
+	color: white;
 	text-align: center;
-	font-size: 0.8em;
 }
 
-.logo-caateeb {
-	max-width: 250px;
+.legal-container {
+	color: white;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.sessions-container {
+	background-color: white;
+	padding-bottom: 60px;
+	min-height: 500px;
+}
+
+.session-background-image {
+	background-color: white;
+	background-image: url(image-path('skyline.png'));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 50%;
+}
+
+.session-form {
+	border: 1px solid #CCC;
+	background-color: #EAEAEA;
+	padding: 20px;
 	margin-bottom: 30px;
 }
 
+.forgot-password {
+	margin: 20px 0px 20px 0px;
+}
+
+.user-icon {
+	height: 14px;
+	margin-top: -2px;
+}
+
+.user-menu {
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 35px;
+	min-width: 200px;
+	min-height: 60px;
+	z-index: 1000;
+	border: 1px solid #CCC;
+}
+
+.user-menu-header {
+	background-color: #EAEAEA;
+	padding: 10px 15px 10px 15px;
+	font-size: 14px;
+}
+
+.user-menu-item {
+	padding-top: 10px;
+	border-top: 1px solid #CCC;
+	padding: 10px 15px 10px 15px;
+	font-size: 14px;
+	background-color: white;
+}
+
+.user-menu-item > a {
+	color: #333;
+}
+
+.user-menu-item > a:hover {
+	color: #333;
+}
+
+.edit-config-container {
+	padding-right: 30px;
+}
+
+/********************/
+
+.home-hero-container {
+	background-color: #333;
+	background-image: url(https://s3-eu-west-1.amazonaws.com/edificapro/hero_home_coffee.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-text-container {
+	margin: 90px 0px 90px 0px;
+}
+
+.home-first-container-background {
+	background-color: #333;
+	background-image: url(https://s3-eu-west-1.amazonaws.com/edificapro/fons_micheel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-first-container {
+  min-height: 401px;
+  background-image: url(https://s3-eu-west-1.amazonaws.com/edificapro/foto_micheel_t.png);
+  background-size: 369px 380px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.home-first-container-small {
+	background-color: white;
+}
+
+.home-hero {
+	
+}
+
+h2.home-photo-title {
+	color: white;
+	font-weight: 300; 
+	line-height: 1.1; 
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+h2.page-title {
+	margin-bottom: 30px;
+}
+
+.home-photo-text {
+	color: white;
+}
+
+.home-first-container-small-text {
+	background-color: #EAEAEA;
+	padding: 20px;
+}
+
+.home-second-container {
+	padding: 40px 0px 40px 0px;
+	background-color: white;
+}
+
+.home-second-container-section {
+	border-right: 1px solid #EAEAEA;
+	margin-right: -20px;
+	padding: 20px;
+}
+
+.home-second-container-section-last {
+	padding: 20px;
+}
+
+.main-container {
+	margin: 40px 0px 60px 0px;
+}
+
+.home-image {
+	
+	margin: 0px 0px 10px 0px;
+}
+
+.slogan {
+	font-weight: 300;
+	margin-bottom: 60px;
+}
+
+.icon-professor {
+	height: 130px;
+}
+
+.icon-time {
+	height: 130px;
+}
+
+.icon-devices {
+	height: 130px;
+}
+
+.icon-library {
+	height: 130px;
+}
+
+h3.home-section-title {
+	margin-bottom: 20px;
+}
+
+.home-third-container {
+	background-color: white;
+	padding: 30px 0px 40px 0px;
+}
+
+.button-big {
+	font-size: 1.5em;
+}
+
+@media only screen and (max-width: 64em) { 
+	.home-hero-container {
+		background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url(https://s3-eu-west-1.amazonaws.com/edificapro/hero_home_coffee.jpg);
+    background-color: #333;
+    background-size: cover;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+	.home-second-container-section {
+		border-top: 1px solid #EAEAEA;
+	}
+
+	.home-second-container-section-last {
+		border-top: 1px solid #EAEAEA;
+		border-bottom: 1px solid #EAEAEA;
+	}
+
+	.home-image {
+		float: left;
+		margin: 30px 30px 0px 0px;
+		min-height: 200px;
+	}
+}
 
 /***** CONTENT ******/
 

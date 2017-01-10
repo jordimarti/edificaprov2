@@ -24,12 +24,152 @@ ca:
               invalid: "No coincideix amb la confirmació"
   layouts:
     application:
-      titol_pagina: "Programa de rehabilitació"
+      titol_pagina: "EdificaPRO"
     navigation:
-      titol: "Programa de rehabilitació"
+      cursos: "Cursos"
       register: "Registrar-se"
       sign_in: "Iniciar sessió"
       account_configuration: "Configuració del compte"
       sign_out: "Tancar sessió"
-      tutorials: "Tutorials"
-      projectes: "Projectes"
+    footer:
+      language_selection: "SELECCIONA UN IDIOMA"
+      terms_and_conditions_button: "Termes i condicions"
+      legal_advice_button: "Avís legal"
+      doubts: "RESOL ELS TEUS DUBTES"
+      general_doubts: "Si tens dubtes sobre les compres o el contingut dels cursos et pots posar en contacte amb nosaltres a"
+      connect: "CONNECTA AMB NOSALTRES"
+  home:
+    index:
+      advantage1_title: "Aprèn dels millors professors"
+      advantage1_text: "Tots els professors d'EdificaPRO tenen experiència en la docència i en el seu camp professional. Ara ja no t'has de limitar al professorat disponible a la teva localitat, amb EdificaPRO podràs veure els professors impartint la classe des dels propis edificis o obres que serveixen d'exemple per al curs."
+      advantage2_title: "Accedeix als teus cursos quan vulguis"
+      advantage2_text: "A tots ens ha passat, comprem un curs online o presencial i apareixen imprevistos que ens impedeixen dedicar el temps necessari per aprofitar-lo. A EdificaPRO el curs comença quan a tu et va bé i el pots fer quan vulguis, tantes vegades com vulguis. Si el compres, el curs és teu."
+      advantage3_title: "Utilitza qualsevol dispositiu"
+      advantage3_text: "La majoria de cursos online cuiden molt poc l'experiència d'usuari. Presentacions en streaming que es tallen, apunts en power-point difícils de comprendre, continguts que no es visualitzen en alguns dispositius... Els cursos d'EdificaPRO són tan flexibles que fins i tot els pots seguir des del teu smartphone o tauleta en qualsevol lloc."
+      advantage4_title: "Crea la teva biblioteca de coneixement"
+      advantage4_text: "Les explicacions d'un curs convencional es queden a l'aula i els apunts o llibres es queden a la teva oficina o a casa. Amb EdificaPRO, en canvi, pots accedir a la teva biblioteca en qualsevol moment i lloc. Si abans d'una reunió oblides quin és el límit de consum màxim d'energia primària de l'estàndard Passivhaus, només has d'accedir a EdificaPRO amb el teu mòbil i consultar-ho."
+      advantage5_title: "Aprèn sense gastar una fortuna"
+      advantage5_text: "Hi ha moltes raons per les quals un curs online pot ser més econòmic que un curs presencial, però afortunadament la qualitat de la formació no és una d'elles. A EdificaPRO hem treballat dur perquè amb els nostres cursos puguis aprendre molt, amb molts avantatges respecte a altres tipus de cursos. A més els cursos tenen un preu tan competitiu que podràs formar-te en molts temes d'interès per al sector de l'edificació i així ser millor professional."
+      advantage6_title: "Demostra tot el que has après"
+      advantage6_text: "A vegades és tan important tenir coneixements com que els altres sàpiguen que els tens. En crear un compte d'EdificaPRO tindràs una pàgina de perfil que pots personalitzar amb el teu nom. En aquesta pàgina, si ho desitges, hi apareixeran els teus avenços i els cursos que has completat. D'aquesta manera et resultarà molt senzill demostrar que estàs al dia en el teu sector."
+      highlighted_course_title: "Introducció a l'estàndard Passivhaus per a climes càlids"
+      highlighted_course_text1: "En Micheel Wassouf és Projectista Passivhaus certificat i té una llarga experiència en docència i en la difusió de l'estàndard."
+      highlighted_course_text2: "De la mà del Micheel aprendràs les bases de l'estàndard Passivhaus a través d'un exemple real: una casa que recentment ha aconseguit la certificació. El curs també inclou la utilització del l'eina PHPP."
+      highlighted_course_button: "Comença ara!"
+  library:
+    passivhaus:
+      course_name: "Introducció a l'estàndar Passivhaus per a climes càlids"
+      teacher_name: "amb Micheel Wassouf"
+      course_price: "Preu del curs"
+      register: "Registra't"
+      or: "o"
+      login: "inicia sessió"
+      to_buy_the_course: "per comprar el curs"
+      course_data: "DADES DEL CURS"
+      language: "Idioma: Espanyol i Anglès"
+      region: "Àmbit geogràfic: Internacional"
+      time: "Temps estimat per realitzar el curs: 8 hores"
+      video_time: "Duració total dels vídeos: aproximadament 2 hores"
+      instructor: "EL PROFESSOR"
+      instructor_description: "Micheel Wassouf és certificador oficial d'edificis Passivhaus. Té una llarga experiència en la docència i en la difusió de l'estàndard. És arquitecte per la Universitat de Karlsruhe d'Alemanya i actualment viu a Espanya. La seva empresa Energiehaus es dedica al desenvolupament i la certificació de projectes Passivhaus en climes càlids. Micheel Wassouf té una llarga experiència pràctica com a arquitecte especialitzat en el disseny d'edificis del tipus Passivhaus i NZEB amb baix impacte ecològic, tant en la fase de construcció com en la del seu ús."
+      instructor_more_info: "Per a més informació visiteu la pàgina d'"
+      course_description: "L'objectiu del curs és entendre les bases de l'estàndard Passivhaus. Per això el curs es divideix en tres capítols molt diferents. En el primer capítol s'explica la filosofia de l'estàndard, per què existeix el Passivhaus i com ha de ser un edifici per obtenir la certificació. En el segon capítol veiem un cas real, un habitatge que ha obtingut la certificació Passivhaus. Des d'aquesta habitatge en Micheel ens explica les solucions adoptades per a poder complir amb l'estàndard. En el tercer capítol se'ns mostra com utilitzar el PHPP, l'eina amb la qual obligatòriament hem de treballar per fer una certificació Passivhaus."
+    subcourses:
+      passivhaus_title: "Introducció a l'estàndar Passivhaus"
+      passivhaus_subtitle: "Selecciona una opció"
+  purchases:
+    new:
+      shop: "Botiga"
+      course_price: "Preu del curs"
+      vat_included: "IVA inclòs"
+      with: "Amb"
+      buy_for: "Comprar el curs per"
+      purchase_text: "Si tens un codi promocional el pots utilitzar aquí."
+      remember_terms: "Recorda que abans de comprar o realitzar qualsevol curs has d'acceptar els"
+      terms_and_conditions: "termes i condicions"
+      continue_with_payment: "Continuar amb el pagament"
+  charges:
+    creditcard:
+      shop: "Botiga"
+      course_price: "Preu del curs"
+      vat_included: "IVA inclòs"
+      with: "Amb"
+      credit_card: "Targeta de crèdit"
+      credit_card_number: "Número de targeta"
+      security_code: "Codi de seguretat"
+      caducity_date: "Data de caducitat"
+      month: "Mes"
+      year: "Any"
+      january: "Gener"
+      february: "Febrer"
+      march: "Març"
+      april: "Abril"
+      may: "Maig"
+      june: "Juny"
+      july: "Juliol"
+      august: "Agost"
+      september: "Setembre"
+      october: "Octubre"
+      november: "Novembre"
+      december: "Desembre"
+      buy_for: "Comprar per"
+      acclaration1: "Estàs realitzant una compra única, això no és una subscripció."
+      acclaration2: "La informació de la targeta de crèdit no s'emmagatzema en els servidors d'EdificaPRO. Per a la teva seguretat aquesta informació passa directament a les entitats encarregades de la transacció econòmica."
+      promotion_code_accepted: "El codi promocional és correcte."
+      start_course: "Iniciar el curs"
+    pay:
+      shop: "Botiga"
+      course_price: "Preu del curs"
+      vat_included: "IVA inclòs"
+      with: "Amb"
+      thanks_for_purchase: "Gràcies per comprar aquest curs"
+      begin_now: "Pots començar ara mateix"
+      start_course: "Iniciar el curs"
+  simple_form:
+    labels:
+      user:
+        first_name: 'Nom'
+        last_name: 'Cognoms'
+        email: 'Correu electrònic'
+        password: 'Contrasenya'
+        password_confirmation: 'Confirmació de contrasenya'
+        current_password: 'Contrasenya actual'
+        remember_me: "Recorda'm"
+      purchase:
+        first_name: 'Nom'
+        last_name: 'Cognoms'
+        company_name: 'Empresa'
+        address: 'Direcció postal'
+        zip_code: 'Codi postal'
+        town: 'Municipi'
+        province: 'Provincia'
+        country: 'País'
+        nif: 'Identificació fiscal (NIF, CIF...)'
+        terms_of_service: ' Accepto els termes i condicions'
+        promotion_code: 'Codi promocional'
+      profile:
+        username: 'Nom'
+        title: 'Títol acadèmic o àmbit de treball'
+        location: 'Localitat'
+        url_nickname: 'Nom de perfil'
+        visible: 'Perfil visible'
+        website: 'Pàgina web'
+        email: 'Correu electrònic'
+        phone: 'Telèfon'
+        available_work: 'Disponible per a treballar o rebre encàrrecs'
+        description: 'Breu presentació de les meves habilitats i experiència'
+    "yes": 'Sí'
+    "no": 'No'
+    required:
+      text: 'Requerit'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Si us plau revisa els camps amb errors:"
+  stripe:
+    errors:
+      incorrect_number: "El número de targeta de crèdit és incorrecte"
+      invalid_number: "El número de targeta de crèdit especificat no és vàlid"
+      

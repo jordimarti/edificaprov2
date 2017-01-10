@@ -1,0 +1,119 @@
+<% content_for :title do %>
+  <%= t('.course_name') %>
+<% end %>
+
+<div class="library-container">
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="library-course-title-container">
+        <h2 class="library-course-title"><%= t('.course_name') %></h2>
+        <h3 class="library-course-subtitle"><%= t('.teacher_name') %> </h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-4 columns">
+      <div class="course-page-side-content">
+        <% if defined? @user_purchase %>
+          <% if @user_purchase.where(:course_id => @course.id).blank? %>
+            <% link_text1 = t('.course_price') + ": " + (@course.price/100).to_s + " €"%>
+            <div class="course-page-buy">
+              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button success') %>
+            </div>
+          <% else %>
+            <div class="course-page-buy">
+              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button success') %>
+            </div>
+          <% end %>
+        <% else %>
+          <% link_text2 = t('.course_price') + ": " + (@course.price/100).to_s + " €" %>
+          <div class="course-page-buy">
+            <%= link_to(link_text2, new_user_registration_path, :class => 'button success') %>
+          </div>
+          <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> <%= t('.or') %> <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
+        <% end %>
+
+        <hr>
+
+        <div class="course-data">
+          <h4 class="course-data-title"><%= t('.course_data') %></h4>
+          <ul class="course-data-list">
+            <li><%= t('.language') %></li>
+            <li><%= t('.region') %></li>
+            <li><%= t('.time') %></li>
+            <li><%= t('.video_time') %></li>
+          </ul>
+        </div>
+
+        <hr>
+
+        <div class="instructor-data">
+          <h4 class="course-data-title">
+            <%= t('.instructor') %>
+          </h4>
+          <div class="instructor-image">
+            <%= image_tag("https://s3-eu-west-1.amazonaws.com/edificapro/instructors/micheel_wassouf.jpg", alt: "Micheel Wassouf") %>
+          </div>
+          <div class="instructor-description">
+            <p><%= t('.instructor_description') %></p>
+            <p><%= t('.instructor_more_info') %><a href="http://www.energiehaus.es">Energiehaus</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="medium-8 columns">
+      <div class="course-page-content">
+        
+        <div class="course-video-intro">
+          <div id='playerOWWvqEYvsqVT'></div>
+          <script type='text/javascript'>
+              <% if I18n.locale == :es || I18n.locale == :ca %>
+                var video_file = 'https://player.vimeo.com/external/108331655.hd.mp4?s=ac4edf90eb4ed03d0fab65a2f16d81ff';
+              <% elsif I18n.locale == :en %>
+                var video_file = 'https://player.vimeo.com/external/198688207.hd.mp4?s=1a187a34708ded68f49a66a732e17f837abfcbf6&profile_id=174';
+              <% end %>
+
+              jwplayer('playerOWWvqEYvsqVT').setup({
+                  file: video_file,
+                  image: 'https://s3-eu-west-1.amazonaws.com/edificapro/c01/poster_c01t00.jpg',
+                  width: '100%',
+                  aspectratio: '16:9'
+              });
+          </script>
+        </div>
+        
+        <div class="course-description">
+          <p><%= t('.course_description') %></p>
+
+          <div class="purchase-body-button">
+            <% if defined? @user_purchase %>
+		          <% if @user_purchase.where(:course_id => @course.id).blank? %>
+		            <% link_text1 = t('.course_price') + ": " + (@course.price/100).to_s + " €"%>
+		            <div class="course-page-buy">
+		              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button success') %>
+		            </div>
+		          <% else %>
+		            <div class="course-page-buy">
+		              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button success') %>
+		            </div>
+		          <% end %>
+		        <% else %>
+		          <% link_text2 = t('.course_price') + ": " + (@course.price/100).to_s + " €" %>
+		          <div class="course-page-buy">
+		            <%= link_to(link_text2, new_user_registration_path, :class => 'button success') %>
+		          </div>
+		          <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> o <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
+		        <% end %>
+
+            
+          </div>
+
+          
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

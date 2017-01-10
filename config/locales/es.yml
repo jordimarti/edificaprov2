@@ -24,12 +24,152 @@ es:
               invalid: "No coincide con la confirmación"
   layouts:
     application:
-      titol_pagina: "Programa de rehabilitación"
+      titol_pagina: "EdificaPRO"
     navigation:
-      titol: "Programa de rehabilitación"
+      cursos: "Cursos"
       register: "Registrarse"
       sign_in: "Iniciar sesión"
       account_configuration: "Configuración de la cuenta"
       sign_out: "Cerrar sesión"
-      tutorials: "Tutoriales"
-      projectes: "Proyectos"
+    footer:
+      language_selection: "SELECCIONA UN IDIOMA"
+      terms_and_conditions_button: "Términos y condiciones"
+      legal_advice_button: "Aviso legal"
+      doubts: "RESUELVE TUS DUDAS"
+      general_doubts: "Si tienes dudas sobre las compras o el contenido de los cursos puedes ponerte en contacto con nosotros en"
+      connect: "CONECTA CON NOSOTROS"
+  home:
+    index:
+      advantage1_title: "Aprende de los mejores profesores"
+      advantage1_text: "Todos los profesores de EdificaPRO tienen experiencia en la docencia y en su campo profesional. Ahora ya no tienes que limitarte al profesorado disponible en tu localidad, con EdificaPRO podrás ver a los profesores impartiendo la clase desde los propios edificios o obras que sirven de ejemplo para el curso."
+      advantage2_title: "Accede a tus cursos cuando quieras"
+      advantage2_text: "A todos nos ha pasado, compramos un curso online o presencial y aparecen imprevistos que nos impiden dedicar el tiempo necesario para aprovecharlo. En EdificaPRO el curso empieza cuando a ti te va bien y lo puedes realizar cuando quieras, tantas veces como desees. Si lo compras, el curso es tuyo."
+      advantage3_title: "Utiliza cualquier dispositivo"
+      advantage3_text: "La mayoría de cursos online cuidan muy poco la experiencia de usuario. Presentaciones en streaming que se cortan, apuntes en power-point difíciles de comprender, contenidos que no se visualizan en algunos dispositivos... Los cursos de EdificaPRO son tan flexibles que incluso los puedes seguir desde tu smartphone o tableta en cualquier lugar."
+      advantage4_title: "Crea tu biblioteca de conocimiento"
+      advantage4_text: "Las explicaciones de un curso convencional se quedan en el aula y los apuntes o libros se quedan en tu oficina o en casa. Con EdificaPRO, en cambio, puedes acceder a tu biblioteca en cualquier momento y lugar. Si antes de una reunión olvidas cuál es el límite de consumo máximo de energía primaria del estándar Passivhaus, sólo tienes que acceder a EdificaPRO con tu móvil y consultarlo."
+      advantage5_title: "Aprende sin gastar una fortuna"
+      advantage5_text: "Hay muchas razones por las que un curso online puede ser más económico que un curso presencial, pero afortunadamente la calidad de la formación no es una de ellas. En EdificaPRO hemos trabajado duro para que con nuestros cursos puedas aprender mucho, con muchas ventajas respecto a otros tipos de cursos. Además los cursos tienen un precio tan competitivo que podrás formarte en muchos temas de interés para el sector de la edificación y así ser mejor profesional."
+      advantage6_title: "Demuestra todo lo que has aprendido"
+      advantage6_text: "A veces es tan importante tener conocimientos como que los otros sepan que los tienes. Al crear una cuenta de EdificaPRO tendrás una página de perfil que puedes personalizar con tu nombre. En esta página, si lo deseas, aparecerán tus avances y los cursos que has completado. De esta manera te resultará muy sencillo demostrar que estás al día en tu sector."
+      highlighted_course_title: "Introducción al estándar Passivhaus para climas cálidos"
+      highlighted_course_text1: "Micheel Wassouf es Proyectista Passivhaus certificado y tiene una larga experiencia en docencia y en la difusión del estándar."
+      highlighted_course_text2: "De la mano de Micheel aprenderás las bases del estándar Passivhaus a través de un ejemplo real: una casa que recientemente ha conseguido la certificación. El curso también incluye la utilización del la herramienta PHPP."
+      highlighted_course_button: "Empieza ahora!"
+  library:
+    passivhaus:
+      course_name: "Introducción al estándar Passivhaus para climas cálidos"
+      teacher_name: "con Micheel Wassouf"
+      course_price: "Precio del curso"
+      register: "Regístrate"
+      or: "o"
+      login: "inicia sesión"
+      to_buy_the_course: "para comprar el curso"
+      course_data: "DATOS DEL CURSO"
+      language: "Idioma: Español e Inglés"
+      region: "Ámbito geográfico: Internacional"
+      time: "Tiempo estimado para realizar el curso: 8 hores"
+      video_time: "Duración total de los vídeos: aproximadamente 2 horas"
+      instructor: "EL PROFESOR"
+      instructor_description: "Micheel Wassouf es certificador oficial de edificios Passivhaus. Tiene una larga experiencia en la docencia y en la difusión del estándar. Es arquitecto por la Universidad de Karlsruhe de Alemania y actualmente vive en España. Su empresa Energiehaus se dedica al desarrollo y la certificación de proyectos Passivhaus en climas cálidos. Micheel Wassouf tiene una larga experiencia práctica como arquitecto especializado en el diseño de edificios del tipo Passivhaus y nZEB con bajo impacto ecológico, tanto en la fase de construcción cómo en la de su uso."
+      instructor_more_info: "Para más información visitad la página de"
+      course_description: "El objetivo del curso es entender las bases del estándar Passivhaus. Para ello el curso se divide en tres capítulos muy distintos. En el primer capítulo se explica la filosofía del estándar, por qué existe el Passivhaus y cómo debe ser un edificio para obtener la certificación. En el segundo capítulo vemos un caso real, una vivienda que ha obtenido la certificación Passivhaus. Desde esta vivienda Micheel nos explica las soluciones adoptadas para poder cumplir con el estándar. En el tercer capítulo se nos muestra cómo usar el PHPP, la herramienta con la que obligatoriamente tenemos que trabajar para hacer una certificación Passivhaus."
+    subcourses:
+      passivhaus_title: "Introducción al estándar Passivhaus"
+      passivhaus_subtitle: "Selecciona una opción"
+  purchases:
+    new:
+      shop: "Tienda"
+      course_price: "Precio del curso"
+      vat_included: "IVA incluido"
+      with: "Con"
+      buy_for: "Comprar el curso por"
+      purchase_text: "Si tienes un código promocional lo puedes usar aquí."
+      remember_terms: "Recuerda que antes de comprar o realizar cualquier curso debes aceptar los"
+      terms_and_conditions: "términos y condiciones"
+      continue_with_payment: "Continuar con el pago"
+  charges:
+    creditcard:
+      shop: "Tienda"
+      course_price: "Precio del curso"
+      vat_included: "IVA incluido"
+      with: "Con"
+      credit_card: "Tarjeta de crédito"
+      credit_card_number: "Número de tarjeta"
+      security_code: "Código de seguridad"
+      caducity_date: "Fecha de caducidad"
+      month: "Mes"
+      year: "Año"
+      january: "Enero"
+      february: "Febrero"
+      march: "Marzo"
+      april: "Abril"
+      may: "Mayo"
+      june: "Junio"
+      july: "Julio"
+      august: "Agosto"
+      september: "Septiembre"
+      october: "Octubre"
+      november: "Noviembre"
+      december: "Diciembre"
+      buy_for: "Comprar por"
+      acclaration1: "Estás realizando una compra única, esto no es una suscripción."
+      acclaration2: "La información de la tarjeta de crédito no se almacena en los servidores de EdificaPRO. Para tu seguridad esta información pasa directamente a las entidades encargadas de la transacción económica."
+      promotion_code_accepted: "El código promocional es correcto."
+      start_course: "Iniciar el curso"
+    pay:
+      shop: "Tienda"
+      course_price: "Precio del curso"
+      vat_included: "IVA incluido"
+      with: "Con"
+      thanks_for_purchase: "Gracias por comprar este curso"
+      begin_now: "Puedes empezar ahora mismo"
+      start_course: "Iniciar el curso" 
+  simple_form:
+    labels:
+      user:
+        first_name: 'Nombre'
+        last_name: 'Apellidos'
+        email: 'Correo electrónico'
+        password: 'Contraseña'
+        password_confirmation: 'Confirmación de contraseña'
+        current_password: 'Contraseña actual'
+        remember_me: 'Recuérdame'
+      purchase:
+        first_name: 'Nombre'
+        last_name: 'Apellidos'
+        company_name: 'Empresa'
+        address: 'Dirección postal'
+        zip_code: 'Código postal'
+        town: 'Municipio'
+        province: 'Provincia'
+        country: 'País'
+        nif: 'Identificación fiscal (NIF, CIF...)'
+        terms_of_service: ' Acepto los términos y condiciones'
+        promotion_code: 'Código promocional'
+      profile:
+        username: 'Nombre'
+        title: 'Título académico o ámbito de trabajo'
+        location: 'Localidad'
+        url_nickname: 'Nombre de perfil'
+        visible: 'Perfil visible'
+        website: 'Página web'
+        email: 'Correo electrónico'
+        phone: 'Teléfono'
+        available_work: 'Disponible para trabajar o recibir encargos'
+        description: 'Breve presentación de mis habilidades y experiencia'
+    "yes": 'Sí'
+    "no": 'No'
+    required:
+      text: 'Requerido'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Por favor revisa los campos con errores:"
+  stripe:
+    errors:
+      incorrect_number: "El número de tarjeta de crédito es incorrecto"
+      invalid_number: "El número de tarjeta de crédito especificado no es válido"
+      

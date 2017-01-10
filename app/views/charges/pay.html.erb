@@ -1,0 +1,46 @@
+<div class="purchase-container">
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 class="page-title"><%= t('.shop') %></h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-4 columns">
+      <div class="library-course-container">
+        <div class="library-course-image">
+          <%= image_tag(@course.image, :alt => @course.name, :class => 'responsive-image') %>
+        </div>
+        <div class="library-course-text">
+          <div class="library-course-title">
+            <%= @course.name %>
+          </div>
+        </div>
+        <div class="course-price">
+          <%= t('.course_price') %>: <%= (@course.price/100).to_s %> € <br/>
+          <span class="taxes"><%= t('.vat_included') %></span>
+        </div>
+      </div>
+    </div>
+    <div class="medium-7 medium-offset-1 columns">
+      <div class="purchase-form">
+        <div class="credit-card-container">
+
+          <% flash.each do |name, msg| %>
+            <% if msg.is_a?(String) %>
+              <div data-alert class="alert-box <%= name.to_s == 'notice' ? 'success' : 'alert' %>">
+                <%= content_tag :div, msg %>
+                <a href="#" class="close">&times;</a>
+              </div>
+            <% end %>
+          <% end %>
+
+        <h3><%= t('.thanks_for_purchase') %>. <br/><%= t('.begin_now') %>!</h3>
+        <div class="begin-course">
+          <p class="text-center"><%= link_to(t('.start_course'), {:controller => 'library', :action => 'show', :id => @course.id, :lesson_id => @first_lesson}, :class => 'button success', data: {no_turbolink: true}) %></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  

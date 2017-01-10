@@ -1,0 +1,21 @@
+<%= simple_form_for(@subcourse) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :course_id %>
+    <%= f.input :name %>
+    <%= f.input :duration %>
+    <%= f.input :videos_duration %>
+    <%= f.input :library_image %>
+    <%= f.input :intro_video_hd %>
+    <%= f.input :intro_video_sd %>
+    <%= f.input :intro_video_image %>
+    <%= f.input :locale %>
+    <%= f.input :region %>
+    <%= f.input :visible %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

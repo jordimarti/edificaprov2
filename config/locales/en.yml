@@ -1,23 +1,175 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password_confirmation:
+              confirmation: "Doesn't match with confirmation"
+            current_password:
+              blank: "Can't be blank"
+              invalid: "The password is not valid"
+            password:
+              too_short: "The password should have at least 8 characters"
+              blank: "Can't be blank"
+            email:
+              taken: "This email is registered yet"
+              invalid: "This email address isn't valid"
+              blank: "You must write your email"
+            first_name:
+              blank: "You must write your first name"
+            last_name:
+              blank: "You must write your last name"
+            reset_password_token:
+              invalid: "Does not match confirmation"
+  layouts:
+    application:
+      titol_pagina: "EdificaPRO"
+    navigation:
+      cursos: "Courses"
+      register: "Sign up"
+      sign_in: "Log in"
+      account_configuration: "Account configuration"
+      sign_out: "Close session"
+    footer:
+      language_selection: "SELECT A LANGUAGE"
+      terms_and_conditions_button: "Terms and conditions"
+      legal_advice_button: "Legal advice"
+      doubts: "RESOLVE YOUR QUESTIONS"
+      general_doubts: "If you have questions about purchasing or the courses contents you can contact us"
+      connect: "CONNECT WITH US"
+  home:
+    index:
+      advantage1_title: "Learn from the best teachers"
+      advantage1_text: ""
+      advantage2_title: "Access your courses whenever you want"
+      advantage2_text: ""
+      advantage3_title: "Use any device"
+      advantage3_text: ""
+      advantage4_title: "Create your knowledge library"
+      advantage4_text: ""
+      advantage5_title: "Learn without spending a fortune"
+      advantage5_text: ""
+      advantage6_title: "Prove all what you have learned"
+      advantage6_text: ""
+      highlighted_course_title: "Introduction to the Passivhaus standard for warm climates"
+      highlighted_course_text1: "Micheel Wassouf is a certified Passivhaus Designer and has an extensive experience in teaching and disseminating the standard."
+      highlighted_course_text2: "With Micheel you will learn the basics of the Passivhaus standard through a real example: a house that recently obtained the certification. The course also covers the use of the PHPP software."
+      highlighted_course_button: "Begin now!"
+  library:
+    passivhaus:
+      course_name: "Introduction to the Passivhaus standard for warm climates"
+      teacher_name: "with Micheel Wassouf"
+      course_price: "Course price"
+      register: "Sign up"
+      or: "or"
+      login: "login"
+      to_buy_the_course: "to buy the course"
+      course_data: "COURSE DATA"
+      language: "Language: English and Spanish"
+      region: "Geographical area: International"
+      time: "Estimated time to complete the course: 8 hours"
+      video_time: "Total video duration: about 2 hours"
+      instructor: "THE TEACHER"
+      instructor_description: "Micheel Wassouf is an official certifier of Passivhaus buildings. He has a long experience in teaching and in disseminating the standard. He obtained his architect degree by the University of Karlsruhe of Germany and currently lives in Spain. His company Energiehaus is dedicated to the development and certification of Passivhaus projects in warm climates. Micheel Wassouf has a long practical experience as an architect specializing in the design of Passivhaus and nZEB buildings with low ecological impact, both in the construction phase and the use phase."
+      instructor_more_info: "For more information visit"
+      course_description: "The purpose of the course is to understand the basis of the Passivhaus standard. For this the course is divided into three very different chapters. The first chapter explains the philosophy of the standard, why the Passivhaus exists and how a building should be to obtain certification. In the second chapter we see a real case, a house that has obtained Passivhaus certification. From this house Micheel explains the solutions adopted to meet the standard. In the third chapter we are shown how to use PHPP, the tool to be used to make a Passivhaus certification."
+    subcourses:
+      passivhaus_title: "Introduction to the Passivhaus standard for warm climates"
+      passivhaus_subtitle: "Select an option"
+  purchases:
+    new:
+      shop: "Shop"
+      course_price: "Course price"
+      vat_included: "VAT included"
+      with: "With"
+      buy_for: "Buy the course"
+      purchase_text: "If you have a promotional code you can use it here."
+      remember_terms: "Before the purchase you must accept the"
+      terms_and_conditions: "terms and conditions"
+      continue_with_payment: "Continue with payment"
+  charges:
+    creditcard:
+      shop: "Shop"
+      course_price: "Course price"
+      vat_included: "VAT included"
+      with: "With"
+      credit_card: "Credit card"
+      credit_card_number: "Credit card number"
+      security_code: "Security code"
+      caducity_date: "Expiry date"
+      month: "Month"
+      year: "Year"
+      january: "January"
+      february: "February"
+      march: "March"
+      april: "April"
+      may: "May"
+      june: "June"
+      july: "July"
+      august: "August"
+      september: "September"
+      october: "October"
+      november: "November"
+      december: "December"
+      buy_for: "Buy for"
+      acclaration1: "You are making a one time purchase. This isn't a subscription."
+      acclaration2: "Your credit card details are not stored in EdificaPRO's servers. For security reasons this information goes straight to the entities responsible of the transaction."
+      promotion_code_accepted: "The promotional code is right."
+      start_course: "Begin the course"
+    pay:
+      shop: "Shop"
+      course_price: "Course price"
+      vat_included: "VAT included"
+      with: "With"
+      thanks_for_purchase: "Thank you for your purchase"
+      begin_now: "You can begin right now"
+      start_course: "Begin the course"
+  simple_form:
+    labels:
+      user:
+        first_name: 'First name'
+        last_name: 'Last name'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
+        current_password: 'Current password'
+        remember_me: "Remember me"
+      purchase:
+        first_name: 'First name'
+        last_name: 'Last name'
+        company_name: 'Company name'
+        address: 'Address'
+        zip_code: 'Zip code'
+        town: 'Town'
+        province: 'Province'
+        country: 'Country'
+        nif: 'ID number'
+        terms_of_service: ' I accept terms and conditions'
+        promotion_code: 'Promotional code'
+      profile:
+        username: 'Name'
+        title: 'Profession'
+        location: 'Location'
+        url_nickname: 'Profile name'
+        visible: 'Visible profile'
+        website: 'Website'
+        email: 'Email'
+        phone: 'Phone'
+        available_work: 'Available to work'
+        description: 'Brief presentation of my abilities and experience'
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'Required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: "Please check fields with errors:"
+  stripe:
+    errors:
+      incorrect_number: "The credit card number is incorrect"
+      invalid_number: "The credit card number isn't valid"
+      

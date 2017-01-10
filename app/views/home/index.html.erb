@@ -1,2 +1,61 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<div class="home-first-container-background">
+	<div class="row">
+		<div class="home-first-container">
+			<div class="large-7 large-offset-5 columns">
+				<h2 class="home-photo-title"><%= t('.highlighted_course_title') %></h2>
+				<p class="home-photo-text"><%= t('.highlighted_course_text1') %></p>
+				<p class="home-photo-text"><%= t('.highlighted_course_text2') %></p>
+				<p class="text-center"> <%= link_to(t('.highlighted_course_button'), {:controller => '/library', :action => 'passivhaus'}, :class => 'button') %> </p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="home-second-container">
+	
+	<div class="row">
+		<div class="large-6 columns">
+			<div class="home-image">
+				<%= image_tag('professor.png', :alt => t('.advantage1_title'), :class => 'icon-professor') %>
+			</div>
+			<h3 class="home-section-title"><%= t('.advantage1_title') %></h3>
+			<p><%= t('.advantage1_text') %></p>
+		</div>
+		<div class="large-6 columns">
+			<div class="home-image">
+				<%= image_tag('time.png', :alt => t('.advantage2_title'), :class => 'icon-time') %>
+			</div>
+			<h3 class="home-section-title"><%= t('.advantage2_title') %></h3>
+			<p><%= t('.advantage2_text') %></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-6 columns">
+			<div class="home-image">
+				<%= image_tag('devices.png', :alt => t('.advantage3_title'), :class => 'icon-devices') %>
+			</div>
+			<h3 class="home-section-title"><%= t('.advantage3_title') %></h3>
+			<p><%= t('.advantage3_text') %></p>
+		</div>
+
+		<div class="large-6 columns">
+			<div class="home-image">
+				<%= image_tag('library.png', :alt => t('.advantage4_title'), :class => 'icon-library') %>
+			</div>
+			<h3 class="home-section-title"><%= t('.advantage4_title') %></h3>
+			<p><%= t('.advantage4_text') %></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="large-6 columns">
+			<div class="home-image">
+				<%= image_tag('money.png', :alt => t('.advantage5_title'), :class => 'icon-devices') %>
+			</div>
+			<h3 class="home-section-title"><%= t('.advantage5_title') %></h3>
+			<p><%= t('.advantage5_text') %></p>
+		</div>
+
+		
+	</div>
+</div>

@@ -1,0 +1,45 @@
+<div class="library-container">
+	<div class="row">
+		<div class="small-12 columns">
+			<h2 class="page-title"><%= t('.passivhaus_title') %></h2>
+			<p><%= t('.passivhaus_subtitle') %></p>
+		</div>
+	</div>
+		
+	<div class="row">
+		<div class="medium-3 columns">
+			<%= link_to({:controller => '/library', :action => 'show', :id => 1}, :class => 'course-link') do %>
+				<div class="library-course-container">
+					<div class="course-image">
+						<%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/c01/c01_es.jpg', :alt => 'Introducción al estándar Passivhaus para climas cálidos', :class => 'responsive-image') %>
+					</div>
+					<div class="library-course-text">
+						<div class="library-course-title">
+							Introducción al estándar Passivhaus para climas cálidos
+						</div>
+						<div class="library-course-instructor">
+							Con Micheel Wassouf
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+		<div class="medium-3 columns end">
+			<%= link_to({:controller => '/library', :action => 'show', :id => 2}, :class => 'course-link') do %>
+				<div class="library-course-container">
+					<div class="course-image">
+						<%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/c01/c01_en.jpg', :alt => 'Introduction to the Passivhaus standard for warm climates', :class => 'responsive-image') %>
+					</div>
+					<div class="library-course-text">
+						<div class="library-course-title">
+							Introduction to the Passivhaus standard for warm climates
+						</div>
+						<div class="library-course-instructor">
+							With Micheel Wassouf
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

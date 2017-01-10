@@ -8,16 +8,19 @@
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <script src="https://jwpsrv.com/library/Aq32fv3UEeOFryIACyaB8g.js"></script>
     <%= csrf_meta_tags %>
+    <%= yield(:stripe_scripts) %>
   </head>
 
   <body>
     <header>
       <%= render 'layouts/navigation' %>
-      <%= render 'layouts/subnavigation' %>
     </header>
 
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
 
     <footer>
     <%= render 'layouts/footer' %>

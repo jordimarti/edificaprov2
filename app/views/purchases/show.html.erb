@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @purchase.user_id %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @purchase.course_id %>
+</p>
+
+<p>
+  <strong>Terms of service:</strong>
+  <%= @purchase.terms_of_service %>
+</p>
+
+<p>
+  <strong>Paid:</strong>
+  <%= @purchase.paid %>
+</p>
+
+<p>
+  <strong>Refund:</strong>
+  <%= @purchase.refund %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @purchase.price %>
+</p>
+
+<p>
+  <strong>Promotion code:</strong>
+  <%= @purchase.promotion_code %>
+</p>
+
+<p>
+  <strong>Bill number:</strong>
+  <%= @purchase.bill_number %>
+</p>
+
+<%= link_to 'Edit', edit_purchase_path(@purchase) %> |
+<%= link_to 'Back', purchases_path %>

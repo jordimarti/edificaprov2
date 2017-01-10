@@ -22,6 +22,6 @@ module Progrehab
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.action_mailer.default_url_options = { host: 'http://progrehab.herokuapp.com' }
+    config.action_mailer.default_url_options = { host: 'http://edificaprov2.herokuapp.com' }
   end
 end

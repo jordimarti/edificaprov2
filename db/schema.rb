@@ -10,10 +10,76 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161223102742) do
+ActiveRecord::Schema.define(version: 20161229224246) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "courses", force: :cascade do |t|
+    t.string   "name"
+    t.string   "image"
+    t.integer  "price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lessons", force: :cascade do |t|
+    t.integer  "subcourse_id"
+    t.integer  "section_id"
+    t.integer  "position"
+    t.string   "title"
+    t.text     "content"
+    t.string   "image"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "promotions", force: :cascade do |t|
+    t.integer  "course_id"
+    t.string   "code"
+    t.decimal  "price"
+    t.boolean  "single_use"
+    t.boolean  "used"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "purchases", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "course_id"
+    t.boolean  "terms_of_service"
+    t.boolean  "paid"
+    t.boolean  "refund"
+    t.integer  "price"
+    t.string   "promotion_code"
+    t.integer  "bill_number"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "sections", force: :cascade do |t|
+    t.integer  "subcourse_id"
+    t.integer  "position"
+    t.string   "title"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "subcourses", force: :cascade do |t|
+    t.integer  "course_id"
+    t.string   "name"
+    t.decimal  "duration"
+    t.decimal  "videos_duration"
+    t.string   "library_image"
+    t.string   "intro_video_hd"
+    t.string   "intro_video_sd"
+    t.string   "intro_video_image"
+    t.string   "locale"
+    t.string   "region"
+    t.boolean  "visible"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",     null: false
