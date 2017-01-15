@@ -18,7 +18,7 @@
 
                         <p style="margin: 20px 0;">
   <%= t('.hello') %> <%= @user_details.first_name %>, <br><br>
-  <%= t('.thanks_for_buying') %> <strong>"<%= @course_details.name %>"</strong> <%= t('.thanks_for_buying2') %>.
+  <%= t('.thanks_for_buying') %> <strong>"<%= @course_name %>"</strong> <%= t('.thanks_for_buying2') %>.
 </p>
 
 <table class="hr" style="border-spacing: 0; border-collapse: collapse; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; width: 100%; border-top-color: #ebeaef; border-top-style: solid; background: #ffffff; margin: 0; padding: 0; border-width: 2px 0 0;"><tr style="vertical-align: top; padding: 0;"><td style="vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">&nbsp;</td></tr></table>
@@ -35,7 +35,7 @@
       </p>
 
       <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.course_name') %>:</h4>
-      <p style="margin: 0 0 20px;"><%= @course_details.name %></p>
+      <p style="margin: 0 0 20px;"><%= @course_name %></p>
 
       <h4 style="color: #999999; display: block; font-family: proxima-nova, 'helvetica neue', helvetica, arial, geneva, sans-serif; font-size: 15px; font-weight: normal; line-height: 100%; margin: 0;"><%= t('.bill_number') %>:</h4>
       <p style="margin: 0 0 20px;">EP-<%= @purchase_details.bill_number %></p>

@@ -3,7 +3,7 @@ class CreatePromotions < ActiveRecord::Migration[5.0]
     create_table :promotions do |t|
       t.integer :course_id
       t.string :code
-      t.decimal :price
+      t.integer :price
       t.boolean :single_use
       t.boolean :used
 

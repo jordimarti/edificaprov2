@@ -8,11 +8,11 @@
     <div class="medium-4 columns">
       <div class="library-course-container">
         <div class="library-course-image">
-          <%= image_tag(@course.image, :alt => @course.name, :class => 'responsive-image') %>
+          <%= image_tag(@course.image, :alt => @course_name, :class => 'responsive-image') %>
         </div>
         <div class="library-course-text">
           <div class="library-course-title">
-            <%= @course.name %>
+            <%= @course_name %>
           </div>
         </div>
         <div class="course-price">
@@ -36,7 +36,7 @@
 
         <h3><%= t('.thanks_for_purchase') %>. <br/><%= t('.begin_now') %>!</h3>
         <div class="begin-course">
-          <p class="text-center"><%= link_to(t('.start_course'), {:controller => 'library', :action => 'show', :id => @course.id, :lesson_id => @first_lesson}, :class => 'button success', data: {no_turbolink: true}) %></p>
+          <p class="text-center"><%= link_to(t('.start_course'), course_subcourses_path(course_id: @course.id), :class => 'button success', data: {no_turbolink: true}) %></p>
         </div>
         
       </div>

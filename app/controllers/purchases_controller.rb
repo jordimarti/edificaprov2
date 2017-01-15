@@ -1,6 +1,7 @@
 class PurchasesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_purchase, only: [:show, :edit, :update, :destroy]
+  include CourseDetails
 
   # GET /purchases
   # GET /purchases.json
@@ -17,6 +18,7 @@ class PurchasesController < ApplicationController
   def new
     @purchase = Purchase.new
     @course = Course.find(params[:id])
+    @course_name = course_title(@course.id, params[:locale])
   end
 
   # GET /purchases/1/edit
@@ -28,6 +30,7 @@ class PurchasesController < ApplicationController
   def create
     @purchase = Purchase.new(purchase_params)
     promotion = Promotion.where(:code => purchase_params[:promotion_code]).last
+    @course_name = course_title(@purchase.course_id, params[:locale])
     if promotion.blank?
       course = Course.find(purchase_params[:course_id])
       @purchase.price = course.price

@@ -64,11 +64,11 @@
     <div class="medium-4 columns">
       <div class="library-course-container">
         <div class="library-course-image">
-          <%= image_tag(@course.image, :alt => @course.name, :class => 'responsive-image') %>
+          <%= image_tag(@course.image, :alt => @course_name, :class => 'responsive-image') %>
         </div>
         <div class="library-course-text">
           <div class="library-course-title">
-            <%= @course.name %>
+            <%= @course_name %>
           </div>
         </div>
         <div class="course-price">
@@ -80,7 +80,7 @@
     <div class="medium-7 medium-offset-1 columns">
       <% if @free_beginning == true %>
         <h3><%= t('.promotion_code_accepted') %></h3>
-        <%= link_to(t('.start_course'), {:controller => 'library', :action => 'show', :id => @course.id, :lesson_id => @first_lesson}, :class => 'button success', data: {no_turbolink: true}) %>
+        <%= link_to(t('.start_course'), course_subcourses_path(course_id: @course.id), :class => 'button success', data: {no_turbolink: true}) %>
       <% else %>
       <div class="purchase-form">
         <div class="credit-card-container">
@@ -147,7 +147,7 @@
               </div>
               <div class="row">
                 <div class="medium-12 columns">
-                  <button type="submit" class="pay-button"><%= t('.buy_for') %> <%= @purchase.price/100 %>€</button>
+                  <button type="submit" class="button"><%= t('.buy_for') %> <%= @purchase.price/100 %>€</button>
                 </div>
               </div>
             </div>

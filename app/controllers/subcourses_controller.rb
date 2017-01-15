@@ -1,10 +1,13 @@
 class SubcoursesController < ApplicationController
+  include CourseDetails
   before_action :set_subcourse, only: [:show, :edit, :update, :destroy]
 
   # GET /subcourses
   # GET /subcourses.json
   def index
-    @subcourses = Subcourse.all
+    @subcourses = Subcourse.where(course_id: params[:course_id])
+    @course = Course.find(params[:course_id])
+    @course_name = course_title(@course.id, params[:locale])
   end
 
   # GET /subcourses/1

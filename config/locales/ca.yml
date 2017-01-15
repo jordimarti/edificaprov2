@@ -1,4 +1,7 @@
 ca:
+  date:
+    formats:
+      default: ! '%d/%m/%Y'
   activerecord:
     errors:
       models:
@@ -22,6 +25,10 @@ ca:
               blank: "Cal escriure els cognoms"
             reset_password_token:
               invalid: "No coincideix amb la confirmació"
+        purchase:
+          attributes:
+            terms_of_service:
+              blank: "Has d'acceptar els termes i condicions"
   layouts:
     application:
       titol_pagina: "EdificaPRO"
@@ -31,6 +38,7 @@ ca:
       sign_in: "Iniciar sessió"
       account_configuration: "Configuració del compte"
       sign_out: "Tancar sessió"
+      language: "Idioma"
     footer:
       language_selection: "SELECCIONA UN IDIOMA"
       terms_and_conditions_button: "Termes i condicions"
@@ -61,6 +69,7 @@ ca:
       course_name: "Introducció a l'estàndar Passivhaus per a climes càlids"
       teacher_name: "amb Micheel Wassouf"
       course_price: "Preu del curs"
+      go_to_course: "Anar al curs"
       register: "Registra't"
       or: "o"
       login: "inicia sessió"
@@ -74,9 +83,9 @@ ca:
       instructor_description: "Micheel Wassouf és certificador oficial d'edificis Passivhaus. Té una llarga experiència en la docència i en la difusió de l'estàndard. És arquitecte per la Universitat de Karlsruhe d'Alemanya i actualment viu a Espanya. La seva empresa Energiehaus es dedica al desenvolupament i la certificació de projectes Passivhaus en climes càlids. Micheel Wassouf té una llarga experiència pràctica com a arquitecte especialitzat en el disseny d'edificis del tipus Passivhaus i NZEB amb baix impacte ecològic, tant en la fase de construcció com en la del seu ús."
       instructor_more_info: "Per a més informació visiteu la pàgina d'"
       course_description: "L'objectiu del curs és entendre les bases de l'estàndard Passivhaus. Per això el curs es divideix en tres capítols molt diferents. En el primer capítol s'explica la filosofia de l'estàndard, per què existeix el Passivhaus i com ha de ser un edifici per obtenir la certificació. En el segon capítol veiem un cas real, un habitatge que ha obtingut la certificació Passivhaus. Des d'aquesta habitatge en Micheel ens explica les solucions adoptades per a poder complir amb l'estàndard. En el tercer capítol se'ns mostra com utilitzar el PHPP, l'eina amb la qual obligatòriament hem de treballar per fer una certificació Passivhaus."
-    subcourses:
-      passivhaus_title: "Introducció a l'estàndar Passivhaus"
-      passivhaus_subtitle: "Selecciona una opció"
+  subcourses:
+    index:
+      select_option: "Selecciona una opció"
   purchases:
     new:
       shop: "Botiga"
@@ -172,4 +181,23 @@ ca:
     errors:
       incorrect_number: "El número de targeta de crèdit és incorrecte"
       invalid_number: "El número de targeta de crèdit especificat no és vàlid"
+  user_mailer:
+    purchase_email:
+      hello: "Hola"
+      thanks_for_buying: "Gràcies per comprar el curs"
+      thanks_for_buying2: "a EdificaPRO. A continuació tens els detalls de la teva compra"
+      account: "Correu del compte"
+      charged_to: "Cobrat a"
+      course_name: "Nom del curs"
+      bill_number: "Identificador de compra"
+      date: "Data"
+      concept: "Concepte"
+      amount: "Quantitat"
+      price_no_vat: "Preu sense IVA"
+      vat: "IVA (21%)"
+      total: "Total"
+      charge_name: "El càrrec a la teva targeta de crèdit serà amb el nom EdificaPRO"
+      doubts: "Si tens dubtes sobre la teva compra o la utilització de la plataforma EdificaPRO no dubtis a posar-te en contacte amb nosaltres a"
+  purchase_done: "La compra s'ha realitzat correctament"
+  purchase_not_done: "La compra no s'ha realitzat"
       

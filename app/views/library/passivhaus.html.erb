@@ -18,17 +18,17 @@
           <% if @user_purchase.where(:course_id => @course.id).blank? %>
             <% link_text1 = t('.course_price') + ": " + (@course.price/100).to_s + " €"%>
             <div class="course-page-buy">
-              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button success') %>
+              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button') %>
             </div>
           <% else %>
             <div class="course-page-buy">
-              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button success') %>
+              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button') %>
             </div>
           <% end %>
         <% else %>
           <% link_text2 = t('.course_price') + ": " + (@course.price/100).to_s + " €" %>
           <div class="course-page-buy">
-            <%= link_to(link_text2, new_user_registration_path, :class => 'button success') %>
+            <%= link_to(link_text2, new_user_registration_path, :class => 'button') %>
           </div>
           <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> <%= t('.or') %> <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
         <% end %>
@@ -56,7 +56,7 @@
           </div>
           <div class="instructor-description">
             <p><%= t('.instructor_description') %></p>
-            <p><%= t('.instructor_more_info') %><a href="http://www.energiehaus.es">Energiehaus</a>.</p>
+            <p><%= t('.instructor_more_info') %> <a href="http://www.energiehaus.es">Energiehaus</a>.</p>
           </div>
         </div>
       </div>
@@ -90,17 +90,17 @@
 		          <% if @user_purchase.where(:course_id => @course.id).blank? %>
 		            <% link_text1 = t('.course_price') + ": " + (@course.price/100).to_s + " €"%>
 		            <div class="course-page-buy">
-		              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button success') %>
+		              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button') %>
 		            </div>
 		          <% else %>
 		            <div class="course-page-buy">
-		              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button success') %>
+		              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button') %>
 		            </div>
 		          <% end %>
 		        <% else %>
 		          <% link_text2 = t('.course_price') + ": " + (@course.price/100).to_s + " €" %>
 		          <div class="course-page-buy">
-		            <%= link_to(link_text2, new_user_registration_path, :class => 'button success') %>
+		            <%= link_to(link_text2, new_user_registration_path, :class => 'button') %>
 		          </div>
 		          <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> o <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
 		        <% end %>

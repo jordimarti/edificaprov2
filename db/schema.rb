@@ -16,7 +16,9 @@ ActiveRecord::Schema.define(version: 20161229224246) do
   enable_extension "plpgsql"
 
   create_table "courses", force: :cascade do |t|
-    t.string   "name"
+    t.string   "name_ca"
+    t.string   "name_es"
+    t.string   "name_en"
     t.string   "image"
     t.integer  "price"
     t.datetime "created_at", null: false
@@ -37,7 +39,7 @@ ActiveRecord::Schema.define(version: 20161229224246) do
   create_table "promotions", force: :cascade do |t|
     t.integer  "course_id"
     t.string   "code"
-    t.decimal  "price"
+    t.integer  "price"
     t.boolean  "single_use"
     t.boolean  "used"
     t.datetime "created_at", null: false

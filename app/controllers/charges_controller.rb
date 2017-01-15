@@ -1,10 +1,12 @@
 class ChargesController < ApplicationController
+  include CourseDetails
+
   def creditcard
   	@purchase = Purchase.find(params[:purchase_id])
 		@course = Course.find(@purchase.course_id)
+		@course_name = course_title(@course.id, params[:locale])
 		if @purchase.price == 0
 			@free_beginning = true
-			@first_theme = @course.themes.order(position: :asc).first
 			@purchase.paid = true
 			@purchase.refund = false
 			@purchase.update_attributes(@purchase.attributes)
@@ -16,7 +18,8 @@ class ChargesController < ApplicationController
   def pay
   	@purchase = Purchase.find(params[:purchase_id])
 		@course = Course.find(@purchase.course_id)
-		@first_lesson = @course.lessons.order(position: :asc).first
+		@course_name = course_title(@course.id, params[:locale])
+		#@first_lesson = @course.lessons.order(position: :asc).first
 		purchase_description = 'EdificaPRO purchase n: ' + @purchase.id.to_s
 		# Get the credit card details submitted by the form
 		token = params[:stripeToken]
@@ -40,7 +43,7 @@ class ChargesController < ApplicationController
 		
 		if @purchase.update_attributes(@purchase.attributes)
       flash[:notice] = I18n.t('.purchase_done')
-      UserMailer.purchase_email(@purchase).deliver
+      UserMailer.purchase_email(@purchase, params[:locale]).deliver
     else
     	flash[:error] = I18n.t('.purchase_not_done')
     end
@@ -49,4 +52,6 @@ class ChargesController < ApplicationController
   def credit_card_error
 		
 	end
+
+	
 end
