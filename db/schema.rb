@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 20161229224246) do
   create_table "subcourses", force: :cascade do |t|
     t.integer  "course_id"
     t.string   "name"
+    t.string   "link"
     t.decimal  "duration"
     t.decimal  "videos_duration"
     t.string   "library_image"

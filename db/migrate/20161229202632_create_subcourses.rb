@@ -3,6 +3,7 @@ class CreateSubcourses < ActiveRecord::Migration[5.0]
     create_table :subcourses do |t|
       t.integer :course_id
       t.string :name
+      t.string :link
       t.decimal :duration
       t.decimal :videos_duration
       t.string :library_image

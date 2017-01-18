@@ -83,9 +83,12 @@ es:
       instructor_description: "Micheel Wassouf es certificador oficial de edificios Passivhaus. Tiene una larga experiencia en la docencia y en la difusión del estándar. Es arquitecto por la Universidad de Karlsruhe de Alemania y actualmente vive en España. Su empresa Energiehaus se dedica al desarrollo y la certificación de proyectos Passivhaus en climas cálidos. Micheel Wassouf tiene una larga experiencia práctica como arquitecto especializado en el diseño de edificios del tipo Passivhaus y nZEB con bajo impacto ecológico, tanto en la fase de construcción cómo en la de su uso."
       instructor_more_info: "Para más información visitad la página de"
       course_description: "El objetivo del curso es entender las bases del estándar Passivhaus. Para ello el curso se divide en tres capítulos muy distintos. En el primer capítulo se explica la filosofía del estándar, por qué existe el Passivhaus y cómo debe ser un edificio para obtener la certificación. En el segundo capítulo vemos un caso real, una vivienda que ha obtenido la certificación Passivhaus. Desde esta vivienda Micheel nos explica las soluciones adoptadas para poder cumplir con el estándar. En el tercer capítulo se nos muestra cómo usar el PHPP, la herramienta con la que obligatoriamente tenemos que trabajar para hacer una certificación Passivhaus."
-  subcourses:
+  intro_passivhaus:
     index:
+      passivhaus_title: "Introducción al estándar Passivhaus para climas cálidos"
       select_option: "Selecciona una opción"
+    button_menu_es:
+      menu_button: "< Menú del curso"
   purchases:
     new:
       shop: "Tienda"

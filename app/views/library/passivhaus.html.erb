@@ -22,7 +22,7 @@
             </div>
           <% else %>
             <div class="course-page-buy">
-              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button') %>
+              <%= link_to(t('.go_to_course'), intro_passivhaus_index_path, :class => 'button') %>
             </div>
           <% end %>
         <% else %>
@@ -94,7 +94,7 @@
 		            </div>
 		          <% else %>
 		            <div class="course-page-buy">
-		              <%= link_to(t('.go_to_course'), {:controller => 'library', :action => 'subcourses', :id => @course.id}, :class => 'button') %>
+		              <%= link_to(t('.go_to_course'), intro_passivhaus_index_path, :class => 'button') %>
 		            </div>
 		          <% end %>
 		        <% else %>
@@ -102,7 +102,7 @@
 		          <div class="course-page-buy">
 		            <%= link_to(link_text2, new_user_registration_path, :class => 'button') %>
 		          </div>
-		          <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> o <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
+		          <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> or <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
 		        <% end %>
 
             

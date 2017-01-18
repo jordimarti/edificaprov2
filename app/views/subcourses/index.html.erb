@@ -10,7 +10,7 @@
     <div class="medium-12 columns">
       <% @subcourses.each do |subcourse| %>
         <% if subcourse.visible == true %>
-          <%= link_to({:controller => '/lesson', :action => 'show', :id => 1}, :class => 'course-link') do %>
+          <%= link_to({controller: '#{subcourse.link}', action: 'index'}, :class => 'course-link') do %>
             <div class="card subcourse-card" style="width: 300px;">
               <%= image_tag(subcourse.library_image, :alt => subcourse.name) %>
               <div class="card-section">

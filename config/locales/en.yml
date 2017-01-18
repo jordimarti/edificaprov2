@@ -43,21 +43,21 @@ en:
       language_selection: "SELECT A LANGUAGE"
       terms_and_conditions_button: "Terms and conditions"
       legal_advice_button: "Legal advice"
-      doubts: "RESOLVE YOUR QUESTIONS"
+      doubts: "RESOLVE YOUR DOUBTS"
       general_doubts: "If you have questions about purchasing or the courses contents you can contact us"
       connect: "CONNECT WITH US"
   home:
     index:
       advantage1_title: "Learn from the best teachers"
-      advantage1_text: ""
+      advantage1_text: "All EdificaPRO teachers have experience in teaching and in their professional field. Now you do not have to limit yourself to the nearby available teachers, with EdificaPRO you can see the teachers in the buildings or works that serve as examples for the course."
       advantage2_title: "Access your courses whenever you want"
-      advantage2_text: ""
+      advantage2_text: "It happened to all of us, you buy an online or classroom course and there are unforeseen events that prevent us from taking the time to take advantage of it. In EdificaPRO the course starts whenever you are ready to take it and you can do it as many times as you want. If you buy it, the course is yours."
       advantage3_title: "Use any device"
-      advantage3_text: ""
+      advantage3_text: "Most online courses don't care that much about the user experience. Streaming presentations that freeze at any time, hard-to-understand power point notes, content not displayed on some devices... EdificaPRO courses are so flexible that you can even follow them from your smartphone or tablet anywhere."
       advantage4_title: "Create your knowledge library"
-      advantage4_text: ""
+      advantage4_text: "The lectures of a conventional course stay in the classroom and the notes or books stay in your office or at home. With EdificaPRO, you can access your library anytime, anywhere. If, before a meeting, you forget the maximum power consumption limit of the Passivhaus standard, you only have to access EdificaPRO with your smartphone and check it."
       advantage5_title: "Learn without spending a fortune"
-      advantage5_text: ""
+      advantage5_text: "An online course can be cheaper than a face-to-face course for many reasons, but luckily the quality of training is not one of them. In EdificaPRO we have worked hard so that with our courses you can learn a lot, with many advantages over other types of courses. In addition the courses have a price so competitive that you can train in many topics of interest to the building sector and thus become a better professional."
       advantage6_title: "Prove all what you have learned"
       advantage6_text: ""
       highlighted_course_title: "Introduction to the Passivhaus standard for warm climates"
@@ -72,7 +72,7 @@ en:
       go_to_course: "Go to course"
       register: "Sign up"
       or: "or"
-      login: "login"
+      login: "log in"
       to_buy_the_course: "to buy the course"
       course_data: "COURSE DATA"
       language: "Language: English and Spanish"
@@ -83,9 +83,12 @@ en:
       instructor_description: "Micheel Wassouf is an official certifier of Passivhaus buildings. He has a long experience in teaching and in disseminating the standard. He obtained his architect degree by the University of Karlsruhe of Germany and currently lives in Spain. His company Energiehaus is dedicated to the development and certification of Passivhaus projects in warm climates. Micheel Wassouf has a long practical experience as an architect specializing in the design of Passivhaus and nZEB buildings with low ecological impact, both in the construction phase and the use phase."
       instructor_more_info: "For more information visit"
       course_description: "The purpose of the course is to understand the basis of the Passivhaus standard. For this the course is divided into three very different chapters. The first chapter explains the philosophy of the standard, why the Passivhaus exists and how a building should be to obtain certification. In the second chapter we see a real case, a house that has obtained Passivhaus certification. From this house Micheel explains the solutions adopted to meet the standard. In the third chapter we are shown how to use PHPP, the tool to be used to make a Passivhaus certification."
-  subcourses:
+  intro_passivhaus:
     index:
+      passivhaus_title: "Introduction to the Passivhaus standard for warm climates"
       select_option: "Select an option"
+    button_menu_es:
+      menu_button: "< Course menu"
   purchases:
     new:
       shop: "Shop"

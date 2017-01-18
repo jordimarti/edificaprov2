@@ -72,6 +72,6 @@ class SubcoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def subcourse_params
-      params.require(:subcourse).permit(:course_id, :name, :duration, :videos_duration, :library_image, :intro_video_hd, :intro_video_sd, :intro_video_image, :locale, :region, :visible)
+      params.require(:subcourse).permit(:course_id, :name, :link, :duration, :videos_duration, :library_image, :intro_video_hd, :intro_video_sd, :intro_video_image, :locale, :region, :visible)
     end
 end

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'intro_passivhaus/index'
+
   get 'charges/creditcard'
   get 'charges/credit_card_error'
   get 'charges/pay'

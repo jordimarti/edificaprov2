@@ -1,0 +1,77 @@
+// Place all the styles related to the IntroPassivhaus controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.c01-course-page-title {
+	background: #de5235;
+	background: linear-gradient(135deg,  #de5235 0%,#eacb77 100%);
+
+	padding: 30px 20px 30px 20px;
+	text-align: center;
+}
+
+.c01-course-name {
+	font-weight: 300;
+	color: white;
+}
+
+.c01-course-instructor {
+	color: white;
+	font-size: 18px;
+}
+
+.c01-course-menu-container {
+	/*background-color: #50413D;*/
+	background-color: #D6B7AB;
+	padding: 50px 0px;
+}
+
+.c01-menu-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 30px 0px 20px 0px;
+	/*color: white;*/
+}
+
+.c01-card-title-container {
+	background-color: #333333;
+}
+
+.c01-card-title {
+	fons-size: 1.2em;
+	color: white;
+}
+
+.c01-menu-button-container {
+	margin-top: 20px;
+}
+
+.c01-menu-button {
+	background-color: #333333;
+	color: #ffffff;
+	padding: 10px;
+}
+
+.c01-menu-button:hover {
+	background-color: #666666;
+	color: #ffffff;
+}
+
+.c01-lesson-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 30px 0px 20px 0px;
+}
+
+.c01-video-container {
+	margin-bottom: 30px;
+	background-color: #CCC;
+	border: 6px solid #CCC;
+	line-height: 0;
+}
+
+.c01-lesson-content > p {
+	font-size: 1.3em;
+	margin-bottom: 1.8rem;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}

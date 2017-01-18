@@ -1,0 +1,31 @@
+<div class="library-container">
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 class="page-title"><%= t('.passivhaus_title') %></h2>
+      <p><%= t('.select_option') %></p>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="medium-4 columns">
+      <%= link_to({controller: 'intro_passivhaus', action: 'menu_es'}, :class => 'course-link') do %>
+        <div class="card subcourse-card" style="width: 300px;">
+          <%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/c01/c01_es.jpg', :alt => 'Introducción al estándar Passivhaus para climas cálidos') %>
+          <div class="card-section">
+            <p>Introducción al estándar Passivhaus para climas cálidos</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="medium-4 columns end">
+      <%= link_to({controller: 'intro_passivhaus', action: 'menu_en'}, :class => 'course-link') do %>
+        <div class="card subcourse-card" style="width: 300px;">
+          <%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/c01/c01_en.jpg', :alt => 'Introduction to the Passivhaus standard for warm climates') %>
+          <div class="card-section">
+            <p>Introduction to the Passivhaus standard for warm climates</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
