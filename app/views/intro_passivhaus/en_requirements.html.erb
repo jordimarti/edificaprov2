@@ -1,0 +1,34 @@
+<div class="library-container">
+	<%= render 'course_header_en' %>
+	<%= render 'button_menu_en' %>
+	<div class="row">
+    <div class="medium-8 medium-offset-2 columns">
+			<h3 class="c01-lesson-title">Requirements of the standard</h3>
+			<div class="c01-lesson-content">
+				<div class="c01-video-container">
+					<div id='playerkSjYrvsaakEn'></div> <script type='text/javascript'> jwplayer('playerkSjYrvsaakEn').setup({ file: 'https://player.vimeo.com/external/198546788.hd.mp4?s=da80e37e88f397dbe99a2a117c93fe3f2148facd&profile_id=174', image: 'https://s3-eu-west-1.amazonaws.com/edificapro/c01/poster_c01t03_en.jpg', width: '100%', aspectratio: '16:9' }); </script> 
+				</div> 
+				<p>A very low energy consumption building (almost zero energy if combined with renewable energies) must fulfill the following values: </p>
+
+				<%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/c01/requisitos_estandar_EN.png', :alt => 'Requirements of the standard passivhaus') %>
+
+				<p>With regards to the reference values for summer, there are 2 main options: 
+					<ul>
+						<li>To have a cold air source, for instance, air conditioning.</li>
+						<li>A free regime to achieve a good summer comfort without air conditioning.</li>
+					</ul>
+				</p>
+
+				<p>In the first case, there is a refrigeration demand and consumption, the one already mentioned: 15 kWh/m<sup>2</sup>y. It is supposed that the temperature of the internal areas will be constant (25 or 26 degrees, what the thermostat demands) and in the second case, there is no refrigeration demand nor consumption, because there is no active cold source. In this case, internal temperatures move within some dynamic strips which can be above 25 or 26 degrees. This possible overheating above these limits will be calculated by the PHPP tool according to some algorithms that divide the year in periods of time with shorter intervals than the usual monthly ones. For Passivhaus, the overheating frequency cannot exceed 10 % of the usage time of the building.</p>
+
+				<p>The maximum allowed consumption of primary energy, 120 kWh/m<sup>2</sup>y, encompasses all the consumptions linked to the activity of the house, that is to say, both the consumption for conditioning, ACS, lighting, office automation, household appliances, auxiliary energy and the rest of consumptions that the use of a building may generate (for instance, a pool, the garage lighting, etc.). A primary energy factor is applied to these consumptions, which depends on each energy used. For instance, electricity (conventional electric mix in Germany) has a current primary energy factor of 2.6. Each kWh I am consuming in my house will need, in this case, 2.6 kWh of energy with non-renewable resources. </p>
+
+				<p>With the experience of the last 20 years, it has been regarded that this value of 120 kWh/m<sup>2</sup>y is demanding for offices, but less demanding for a residential use, so it could be subjected to changes in the future. All these definitions are drafted and updated by the PHI, which is also the author of the first built building, and which coordinates and promotes the standard at the technical and disclosure levels.</p>
+
+				<p>Maybe, the most demanding value for warm climates will be the air flow tightness, which is asked by following the international regulation UNE-EN 13829, also known as the test of Blower Door / pressurization. This value cannot exceed 0.6 air renewals per hour, when the pressure difference between the interior and the exterior is at 50 Pascal. This 50 Pascal equals a pressure with a wind of 30 km/h that presses a part of the façade. The 0.6 value is very demanding and equals a very high air flow tightness. It requires a very meticulous project and a construction control work. In the past, there were several certification attempts in Passivhaus in Spain that did not passed, just for this last requirement. According to the regulation ISO-13790, a result of less than 4/h for an isolated single-family home is considered as very good, being good the values between 4-10/h, and from 10/h we have a low air flow tightness. For big buildings, over 4000 m3, it is also necessary to measure the value q50, which relates the ventilation flow rate with the square meters of the thermal building envelope. In fact, the value of n50=0.6/h is easier to achieve in big buildings because the relation volume/thermal building envelope is more favourable than for the small buildings.</p>
+
+				<%= render 'button_menu_en' %>
+			</div>
+		</div>
+	</div>
+</div>
