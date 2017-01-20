@@ -36,7 +36,7 @@
 
         <h3><%= t('.thanks_for_purchase') %>. <br/><%= t('.begin_now') %>!</h3>
         <div class="begin-course">
-          <p class="text-center"><%= link_to(t('.start_course'), course_subcourses_path(course_id: @course.id), :class => 'button', data: {no_turbolink: true}) %></p>
+          <p class="text-center"><%= link_to(t('.start_course'), url_for(controller: @course.link, action: 'index'), :class => 'button', data: {no_turbolink: true}) %></p>
         </div>
         
       </div>
