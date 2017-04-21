@@ -22,6 +22,6 @@ module Edificapro
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 		config.autoload_paths += %W(#{config.root}/lib)
-    config.action_mailer.default_url_options = { host: 'http://edificaprov2.herokuapp.com' }
+    config.action_mailer.default_url_options = { host: 'https://www.edificapro.com' }
   end
 end
