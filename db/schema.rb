@@ -26,17 +26,6 @@ ActiveRecord::Schema.define(version: 20170120161328) do
     t.string   "link"
   end
 
-  create_table "lessons", force: :cascade do |t|
-    t.integer  "subcourse_id"
-    t.integer  "section_id"
-    t.integer  "position"
-    t.string   "title"
-    t.text     "content"
-    t.string   "image"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
   create_table "promotions", force: :cascade do |t|
     t.integer  "course_id"
     t.string   "code"
@@ -58,31 +47,6 @@ ActiveRecord::Schema.define(version: 20170120161328) do
     t.integer  "bill_number"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-  end
-
-  create_table "sections", force: :cascade do |t|
-    t.integer  "subcourse_id"
-    t.integer  "position"
-    t.string   "title"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "subcourses", force: :cascade do |t|
-    t.integer  "course_id"
-    t.string   "name"
-    t.string   "link"
-    t.decimal  "duration"
-    t.decimal  "videos_duration"
-    t.string   "library_image"
-    t.string   "intro_video_hd"
-    t.string   "intro_video_sd"
-    t.string   "intro_video_image"
-    t.string   "locale"
-    t.string   "region"
-    t.boolean  "visible"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
   end
 
   create_table "users", force: :cascade do |t|
