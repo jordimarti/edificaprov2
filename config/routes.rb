@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'home/index'
   get 'home/contacta'
+  get 'home/access_denied'
   #get 'courses/:course_id/subcourses', to: 'subcourses#index', :as => :subcourses
   
   root :to => "home#index"

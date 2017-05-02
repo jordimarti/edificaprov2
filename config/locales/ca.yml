@@ -64,6 +64,9 @@ ca:
       highlighted_course_text1: "En Micheel Wassouf és Projectista Passivhaus certificat i té una llarga experiència en docència i en la difusió de l'estàndard."
       highlighted_course_text2: "De la mà del Micheel aprendràs les bases de l'estàndard Passivhaus a través d'un exemple real: una casa que recentment ha aconseguit la certificació. El curs també inclou la utilització del l'eina PHPP."
       highlighted_course_button: "Comença ara!"
+    access_denied:
+      access_denied_title: "Accés denegat"
+      permissions: "No tens els permisos necessaris per accedir a aquesta pàgina"
   library:
     passivhaus:
       course_name: "Introducció a l'estàndar Passivhaus per a climes càlids"

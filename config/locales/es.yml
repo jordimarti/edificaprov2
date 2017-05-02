@@ -64,6 +64,9 @@ es:
       highlighted_course_text1: "Micheel Wassouf es Proyectista Passivhaus certificado y tiene una larga experiencia en docencia y en la difusión del estándar."
       highlighted_course_text2: "De la mano de Micheel aprenderás las bases del estándar Passivhaus a través de un ejemplo real: una casa que recientemente ha conseguido la certificación. El curso también incluye la utilización del la herramienta PHPP."
       highlighted_course_button: "Empieza ahora!"
+    access_denied:
+      access_denied_title: "Acceso denegado"
+      permissions: "No tienes los permisos necesarios para acceder a esta página"
   library:
     passivhaus:
       course_name: "Introducción al estándar Passivhaus para climas cálidos"
