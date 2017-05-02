@@ -128,7 +128,7 @@ ca:
       acclaration1: "Estàs realitzant una compra única, això no és una subscripció."
       acclaration2: "La informació de la targeta de crèdit no s'emmagatzema en els servidors d'EdificaPRO. Per a la teva seguretat aquesta informació passa directament a les entitats encarregades de la transacció econòmica."
       promotion_code_accepted: "El codi promocional és correcte."
-      start_course: "Iniciar el curs"
+      begin_course: "Iniciar el curs"
     pay:
       shop: "Botiga"
       course_price: "Preu del curs"

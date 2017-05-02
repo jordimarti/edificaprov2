@@ -128,7 +128,7 @@ es:
       acclaration1: "Estás realizando una compra única, esto no es una suscripción."
       acclaration2: "La información de la tarjeta de crédito no se almacena en los servidores de EdificaPRO. Para tu seguridad esta información pasa directamente a las entidades encargadas de la transacción económica."
       promotion_code_accepted: "El código promocional es correcto."
-      start_course: "Iniciar el curso"
+      begin_course: "Iniciar el curso"
     pay:
       shop: "Tienda"
       course_price: "Precio del curso"

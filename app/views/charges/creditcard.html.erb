@@ -80,7 +80,7 @@
     <div class="medium-7 medium-offset-1 columns">
       <% if @free_beginning == true %>
         <h3><%= t('.promotion_code_accepted') %></h3>
-        <%= link_to(t('.start_course'), url_for(controller: @course.link, action: 'index'), :class => 'button', data: {no_turbolink: true}) %>
+        <%= link_to(t('.begin_course'), intro_passivhaus_index_path, :class => 'button', data: {no_turbolink: true}) %>
       <% else %>
       <div class="purchase-form">
         <div class="credit-card-container">
