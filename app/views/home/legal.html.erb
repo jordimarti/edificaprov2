@@ -1,0 +1,14 @@
+<div class="light-container">
+	<div class="row">
+		<div class="medium-8 columns">
+			<div class="main-container">
+				<% case params[:locale] %>
+				<% when 'ca' %>
+					<%= render 'home/legal_ca' %>
+				<% else %>
+					<%= render 'home/legal_es' %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

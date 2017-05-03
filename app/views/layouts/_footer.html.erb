@@ -41,7 +41,7 @@
 				<a href="https://www.edificapro.com" class="footer-link">© <%= Time.now.year %> EdificaPRO</a>
 			</div>
 			<div class="legal-container">
-				<p><%= link_to(t('.terms_and_conditions_button'), {:controller => '/home', :action => 'index'}, :class => "footer-link") %> - <%= link_to(t('.legal_advice_button'), {:controller => '/home', :action => 'index'}, :class => "footer-link") %></p>
+				<p><%= link_to(t('.terms_and_conditions_button'), {:controller => '/home', :action => 'terms'}, :class => "footer-link") %> - <%= link_to(t('.legal_advice_button'), {:controller => '/home', :action => 'legal'}, :class => "footer-link") %></p>
 			</div>
 		</div>
 	</div>

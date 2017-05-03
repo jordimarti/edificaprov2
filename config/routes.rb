@@ -20,6 +20,8 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'home/contacta'
   get 'home/access_denied'
+  get 'home/legal'
+  get 'home/terms'
   #get 'courses/:course_id/subcourses', to: 'subcourses#index', :as => :subcourses
   
   root :to => "home#index"
