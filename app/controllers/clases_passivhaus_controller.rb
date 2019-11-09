@@ -1,0 +1,2 @@
+class ClasesPassivhausController < ApplicationController
+end

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get 'clases_passivhaus/index'
   get 'intro_passivhaus/index'
 
   get 'charges/creditcard'
