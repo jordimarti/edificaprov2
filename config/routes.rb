@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   get 'clases_passivhaus/index'
   get 'clases_passivhaus/index2'
+  get 'clases_passivhaus/gc8x'
   get 'clases_passivhaus/restricted_access' 
   get 'intro_passivhaus/index'
 
