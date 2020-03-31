@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'clases_passivhaus/ap921'
+  get 'clases_passivhaus/m3k21'
   get 'clases_passivhaus/z48ym'
   get 'clases_passivhaus/xk98e'
   get 'clases_passivhaus/gc8x'
