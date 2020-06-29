@@ -248,9 +248,9 @@ GEM
     shoulda-matchers (4.3.0)
       activesupport (>= 4.2.0)
     simple_bdd (0.1.0)
-    simple_form (3.5.1)
-      actionpack (> 4, < 5.2)
-      activemodel (> 4, < 5.2)
+    simple_form (5.0.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -333,7 +333,7 @@ DEPENDENCIES
   sendgrid-ruby (~> 4.0, >= 4.0.6)
   shoulda-matchers
   simple_bdd
-  simple_form (~> 3.2, >= 3.2.1)
+  simple_form (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   stripe (~> 1.57, >= 1.57.1)
