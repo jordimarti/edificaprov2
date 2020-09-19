@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   
+  get 'clases_passivhaus/la45i8m'
+  get 'clases_passivhaus/lat7m8'
+  get 'clases_passivhaus/lat6m8'
+  get 'clases_passivhaus/lat5m8'
+  get 'clases_passivhaus/lat4m8'
+  get 'clases_passivhaus/lat3m8'
+  get 'clases_passivhaus/lat2m8'
+  get 'clases_passivhaus/lat1m8'
   get 'clases_passivhaus/d3s3x4'
   get 'clases_passivhaus/tr43x4'
   get 'clases_passivhaus/tr4d3s'
