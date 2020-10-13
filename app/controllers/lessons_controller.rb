@@ -21,8 +21,6 @@ class LessonsController < ApplicationController
   def edit
   end
 
-  # POST /lessons
-  # POST /lessons.json
   def create
     @lesson = Lesson.new(lesson_params)
 
@@ -37,8 +35,6 @@ class LessonsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /lessons/1
-  # PATCH/PUT /lessons/1.json
   def update
     respond_to do |format|
       if @lesson.update(lesson_params)
@@ -51,8 +47,6 @@ class LessonsController < ApplicationController
     end
   end
 
-  # DELETE /lessons/1
-  # DELETE /lessons/1.json
   def destroy
     @lesson.destroy
     respond_to do |format|
@@ -62,12 +56,10 @@ class LessonsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_lesson
       @lesson = Lesson.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def lesson_params
       params.require(:lesson).permit(:course_id, :section_id, :position, :title, :content, :image)
     end
