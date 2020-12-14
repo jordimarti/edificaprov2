@@ -6,7 +6,7 @@ ca:
         forgot_password: "Has oblidat la teva contraseña?"
         if_not_registered: "Si encara no t'has registrat, abans has de"
         create_account: "crear un compte"
-        login_needed: "És necessari iniciar sessió per veure els teus projectes."
+        login_needed: "És necessari iniciar sessió per veure els continguts."
         login_button: "Inicia sessió"
     registrations:
       new:

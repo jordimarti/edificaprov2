@@ -1,6 +1,6 @@
 class IntroPassivhausController < ApplicationController
   before_filter :authenticate_user!
-  before_filter :check_purchase
+  #before_filter :check_purchase
 
   def index
   end

@@ -1,0 +1,38 @@
+<div class="library-container">
+	<%= render 'course_header_es' %>
+	<div class="c01-course-menu-container">
+		
+		<div class="row">
+	    <div class="medium-4 columns">
+		    <%= link_to({controller: 'intro_ventilation', action: 'introduccion'}, :class => 'course-link') do %>
+			    <div class="card lesson-card">
+			      <div class="card-divider c01-card-title-container">
+					    <span class="c01-card-title">Ventilación mecánica en viviendas pasivas</span>
+					  </div>
+			      <%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/vent1.jpg', :alt => 'Contexto global') %>
+			    </div>
+			  <% end %>
+	    </div>
+	    <div class="medium-4 columns">
+		    <%= link_to({controller: 'intro_ventilation', action: 'componentes'}, :class => 'course-link') do %>
+			    <div class="card lesson-card">
+			      <div class="card-divider c01-card-title-container">
+					    <span class="c01-card-title">Componentes del recuperador de calor</span>
+					  </div>
+			      <%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/vent2.jpg', :alt => 'Filosofía Passivhaus') %>
+			    </div>
+			  <% end %>
+	    </div>
+	    <div class="medium-4 columns">
+		    <%= link_to({controller: 'intro_ventilation', action: 'criterios'}, :class => 'course-link') do %>
+			    <div class="card lesson-card">
+			      <div class="card-divider c01-card-title-container">
+					    <span class="c01-card-title">Criterios de certificación</span>
+					  </div>
+			      <%= image_tag('https://s3-eu-west-1.amazonaws.com/edificapro/vent3.jpg', :alt => 'Requisitos del estándar') %>
+			    </div>
+			  <% end %>
+	    </div>
+	  </div>
+	</div>
+</div>

@@ -6,7 +6,7 @@ es:
         forgot_password: "Has olvidado tu contraseña?"
         if_not_registered: "Si aún no te has registrado, antes debes"
         create_account: "crear una cuenta"
-        login_needed: "Es necesario iniciar sesión para ver tus proyectos."
+        login_needed: "Es necesario iniciar sesión para ver los contenidos."
         login_button: "Inicia sesión"
     registrations:
       new:
