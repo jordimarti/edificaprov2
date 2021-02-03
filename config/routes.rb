@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'clases_passivhaus/tp1er9'
   get 'clases_passivhaus/cp13x4'
   get 'clases_passivhaus/cp1xd9'
-
+  get 'clases_passivhaus/cp1xd9fis'
+  
   get 'clases_passivhaus/restricted_access' 
   get 'intro_passivhaus/index'
 
