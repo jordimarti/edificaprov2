@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'clases_passivhaus/cp1xd9'
   get 'clases_passivhaus/cp1xd9fis'
   get 'clases_passivhaus/la45i8m'
+  get 'clases_passivhaus/la45i8v'
   get 'clases_passivhaus/d3s3x4'
   
   get 'clases_passivhaus/restricted_access' 
