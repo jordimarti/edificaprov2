@@ -1,6 +1,6 @@
 class ClasesPassivhausController < ApplicationController
 	before_filter :authenticate_user!
-	before_filter :check_clases_access, only: [:cp1xd9, :cp1xd9fis, :cp13x4, :tp1er9, :tp1ex4] 
+	before_filter :check_clases_access, only: [:cp1xd9, :cp1xd9fis, :cp13x4, :tp1er9, :tp1ex4, :ph1xd2] 
 
 	private
   	def check_clases_access

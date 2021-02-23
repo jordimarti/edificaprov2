@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   get 'promo_alumni/index'
 
+  get 'clases_passivhaus/ph1xd2'
   get 'clases_passivhaus/tp1ex4'
   get 'clases_passivhaus/tp1er9'
   get 'clases_passivhaus/cp13x4'
