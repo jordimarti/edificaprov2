@@ -14,24 +14,9 @@
   <div class="row">
     <div class="medium-4 columns">
       <div class="course-page-side-content">
-        <% if defined? @user_purchase %>
-          <% if @user_purchase.where(:course_id => @course.id).blank? %>
-            <% link_text1 = t('.course_price') + ": " + (@course.price/100).to_s + " €"%>
-            <div class="course-page-buy">
-              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button') %>
-            </div>
-          <% else %>
-            <div class="course-page-buy">
-              <%= link_to(t('.go_to_course'), intro_passivhaus_index_path, :class => 'button') %>
-            </div>
-          <% end %>
-        <% else %>
-          <% link_text2 = t('.course_price') + ": " + (@course.price/100).to_s + " €" %>
-          <div class="course-page-buy">
-            <%= link_to(link_text2, new_user_registration_path, :class => 'button') %>
-          </div>
-          <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> <%= t('.or') %> <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
-        <% end %>
+        <div class="course-page-buy">
+          <%= link_to(t('.go_to_course'), intro_passivhaus_index_path, :class => 'button') %>
+        </div>
 
         <hr>
 
@@ -86,24 +71,9 @@
           <p><%= t('.course_description') %></p>
 
           <div class="purchase-body-button">
-            <% if defined? @user_purchase %>
-		          <% if @user_purchase.where(:course_id => @course.id).blank? %>
-		            <% link_text1 = t('.course_price') + ": " + (@course.price/100).to_s + " €"%>
-		            <div class="course-page-buy">
-		              <%= link_to(link_text1, {:controller => '/purchases', :action => 'new', :id => @course.id}, :class => 'button') %>
-		            </div>
-		          <% else %>
-		            <div class="course-page-buy">
-		              <%= link_to(t('.go_to_course'), intro_passivhaus_index_path, :class => 'button') %>
-		            </div>
-		          <% end %>
-		        <% else %>
-		          <% link_text2 = t('.course_price') + ": " + (@course.price/100).to_s + " €" %>
-		          <div class="course-page-buy">
-		            <%= link_to(link_text2, new_user_registration_path, :class => 'button') %>
-		          </div>
-		          <p class="purchase-bottom-text"><%= link_to(t('.register'), new_user_registration_path) %> or <%= link_to t('.login'), new_user_session_path %> <%= t('.to_buy_the_course') %>.</p>
-		        <% end %>
+            <div class="course-page-buy">
+              <%= link_to(t('.go_to_course'), intro_passivhaus_index_path, :class => 'button') %>
+            </div>
 
             
           </div>
